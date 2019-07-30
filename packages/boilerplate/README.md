@@ -1,1 +1,1 @@
-# @slikts/typescript-library-boilerplate
+# @lib-bones/boilerplate
