@@ -1,0 +1,63 @@
+{
+  "name": "@lib-bones/boilerplate",
+  "version": "1.0.0",
+  "description": "Modern TypeScript library boilerplate",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "dev": "npm run clean && rollup -c -w",
+    "test": "jest",
+    "clean": "rimraf lib",
+    "test:watch": "npm test -- --watch",
+    "postversion": "git push && git push --tags",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "npm run lint -- --fix",
+    "typecheck": "tsc"
+  },
+  "keywords": [
+    "boilerplate",
+    "starter",
+    "skeleton",
+    "rollup",
+    "jest",
+    "typescript"
+  ],
+  "author": "slikts <dabas@untu.ms>",
+  "license": "ISC",
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@slikts/rollup-plugin-rename-extensions": "0.0.4",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-url": "^2.2.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@lib-bones/presets": "^1.0.0"
+  }
+}
