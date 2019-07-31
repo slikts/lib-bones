@@ -1,1 +1,1 @@
-module.exports = require('@lib-bones/presets/babel');
+module.exports = require('@lib-bones/preset-babel');

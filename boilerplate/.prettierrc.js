@@ -1,1 +1,1 @@
-module.exports = require('@lib-bones/presets/prettier');
+module.exports = require('@lib-bones/preset-prettier')();

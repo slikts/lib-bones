@@ -1,3 +1,3 @@
-import rollupConfig from '@lib-bones/presets/rollup';
+import rollupConfig from '@lib-bones/preset-rollup';
 
 export default rollupConfig();

@@ -7,7 +7,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@lib-bones/prettier": "^1.0.0",
+        "@lib-bones/preset-prettier": "^1.0.0",
         "@typescript-eslint/eslint-plugin": "^1.13.0",
         "@typescript-eslint/parser": "^1.13.0",
         "eslint-config-airbnb-base": "^13.2.0",

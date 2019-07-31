@@ -4,21 +4,22 @@
   "devDependencies": {
     "lerna": "^3.16.4",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
     "sync-glob": "^1.4.0",
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "sync": "sync-glob 'src/**/*' '!src/**/*.ts' packages",
-    "sync:watch": "sync-glob -w 'src/**/*' '!src/**/*.ts' packages",
-    "prebootstrap": "npm run sync",
+    "sync-dist": "sync-glob 'packages/**/*' '!packages/**/*.ts' dist",
+    "sync-dist:watch": "sync-glob -w 'packages/**/*' '!packages/**/*.ts' dist",
+    "prebootstrap": "npm run sync-dist",
     "bootstrap": "lerna bootstrap --hoist",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "jest",
-    "clean": "git clean -d -X -f packages",
+    "clean": "rimraf dist",
     "prebuild": "npm run clean && npm run sync",
     "build": "tsc -b",
     "build:watch-ts": "tsc -w",
-    "build:watch": "run-p build:watch-ts sync:watch"
+    "build:watch": "run-p build:watch-ts sync-dist:watch"
   }
 }

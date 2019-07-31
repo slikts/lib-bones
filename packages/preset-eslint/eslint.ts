@@ -1,6 +1,8 @@
 const plugins = ["prettier"];
 
-const eslintConfig = ({ prettierConfig }: any) => ({
+console.log(__dirname, 123123123);
+
+const eslintConfig = ({ prettierConfig = require('./prettierrc') }: any = {}) => ({
   extends: ["eslint-config-airbnb-base", "eslint-config-prettier"].map(
     (name) => require.resolve(name)
   ),

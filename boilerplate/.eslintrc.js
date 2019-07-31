@@ -1,5 +1,5 @@
 const prettierConfig = require('./.prettierrc');
 
-const eslintConfig = require('@lib-bones/presets/eslint');
+const eslintConfig = require('@lib-bones/preset-eslint');
 
 module.exports = eslintConfig({ prettierConfig });
