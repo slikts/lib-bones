@@ -1,0 +1,12 @@
+{
+    "name": "@lib-bones/preset-prettier",
+    "version": "1.0.0",
+    "description": "",
+    "main": "prettier.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "prettier": "^1.18.2"
+    }
+}
