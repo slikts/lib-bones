@@ -42,6 +42,6 @@ const eslintConfig = ({ prettierConfig }: any) => ({
       }
     }
   }
-});
+} as const);
 
 export default eslintConfig;

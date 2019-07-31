@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import renameExtensions from '@slikts/rollup-plugin-rename-extensions';
 
+// @ts-ignore
 import pkg from './package.json';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -48,6 +49,6 @@ const rollupConfig = () => ({
     }),
     // production && terser(),
   ],
-});
+} as const);
 
 export default rollupConfig;

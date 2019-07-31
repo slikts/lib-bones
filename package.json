@@ -7,6 +7,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "pretest": "eslint packages",
-    "test": "jest"
+    "test": "jest",
+    "clean": "git clean -X -f packages",
+    "postclean": "rm tsconfig.tsbuildinfo",
+    "build": "tsc -b"
   }
 }
+ 
