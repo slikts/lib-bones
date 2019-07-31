@@ -2,11 +2,18 @@
   "version": "0.0.0",
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": [
+        "*.md",
+        "*.spec.{js,jsx,ts,tsx}"
+      ],
       "message": "chore(release): publish"
     },
     "bootstrap": {
       "npmClientArgs": ["--no-package-lock"]
     }
-  }
+  },
+  "packages": [
+    "packages/*",
+    "boilerplate"
+  ]
 }

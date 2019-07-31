@@ -2,15 +2,15 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "typescript": "^3.5.3"
   },
   "scripts": {
+    "prebootstrap": "npm run build",
     "bootstrap": "lerna bootstrap --hoist",
     "pretest": "eslint packages",
     "test": "jest",
     "clean": "git clean -X -f packages",
-    "postclean": "rm tsconfig.tsbuildinfo",
     "build": "tsc -b"
   }
 }
- 
