@@ -1,8 +1,8 @@
 const plugins = ["prettier"];
 
-const eslintConfig = ({ prettierConfig }) => ({
+const eslintConfig = ({ prettierConfig }: any) => ({
   extends: ["eslint-config-airbnb-base", "eslint-config-prettier"].map(
-    require.resolve
+    (name) => require.resolve(name)
   ),
   plugins,
   rules: {
@@ -44,4 +44,4 @@ const eslintConfig = ({ prettierConfig }) => ({
   }
 });
 
-module.exports = eslintConfig;
+export default eslintConfig;
