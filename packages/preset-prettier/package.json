@@ -1,6 +1,6 @@
 {
     "name": "@lib-bones/preset-prettier",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "",
     "main": "prettier.js",
     "keywords": [],
