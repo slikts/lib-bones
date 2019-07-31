@@ -1,6 +1,6 @@
 {
     "name": "@lib-bones/preset-jest",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "",
     "main": "jest.js",
     "keywords": [],

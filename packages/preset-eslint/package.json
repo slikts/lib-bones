@@ -1,13 +1,13 @@
 {
     "name": "@lib-bones/preset-eslint",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "",
     "main": "eslint.js",
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@lib-bones/preset-prettier": "^1.0.0",
+        "@lib-bones/preset-prettier": "^0.0.1",
         "@typescript-eslint/eslint-plugin": "^1.13.0",
         "@typescript-eslint/parser": "^1.13.0",
         "eslint-config-airbnb-base": "^13.2.0",
