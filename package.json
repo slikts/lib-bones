@@ -6,11 +6,11 @@
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "prebootstrap": "npm run build",
+    "sync": "rsync -av --exclude='*.ts' src/ packages",
     "bootstrap": "lerna bootstrap --hoist",
     "pretest": "eslint packages",
     "test": "jest",
-    "clean": "git clean -X -f packages",
+    "clean": "git clean -d -X -f packages",
     "build": "tsc -b"
   }
 }
