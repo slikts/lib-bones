@@ -8,5 +8,8 @@
     "license": "ISC",
     "peerDependencies": {
         "prettier": "^1.18.2"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }

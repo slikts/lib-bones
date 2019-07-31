@@ -8,5 +8,8 @@
     "license": "ISC",
     "peerDependencies": {
         "typescript": "^3.5.3"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }

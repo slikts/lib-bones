@@ -10,5 +10,8 @@
     "author": "",
     "license": "ISC",
     "peerDependencies": {
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
